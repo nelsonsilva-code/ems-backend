@@ -24,7 +24,7 @@ $sudo vim /etc/hosts
 Create the EMS user in your local mysql database:
 ```
 mysql -u root -p
-CREATE USER 'ems'@'localhost';
+CREATE USER 'ems'@'localhost' IDENTIFIED BY 'Mysql@123';;
 GRANT ALL PRIVILEGES ON *.* TO 'ems'@'localhost' WITH GRANT OPTION;
 ```
 
